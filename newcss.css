@@ -1,0 +1,330 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header */
+.header-area {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  gap: 0;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
+  background: #444;
+  color: #fff;
+  border-right: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+.navbar li:last-child a {
+  border-right: none;
+}
+
+/* Home Section */
+.FirstElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  animation: fadeInUp 1s ease-in-out;
+  text-align: center;
+}
+
+.profile-photo {
+  margin-bottom: 20px;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-text h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #333;
+}
+
+.profile-text h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social a:hover {
+  color: #555;
+  transform: translateY(-5px);
+}
+
+/* About Section */
+.about-area {
+  padding: 50px 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-content, .about-skills {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.about-content h4, .about-skills h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.6;
+}
+
+.about-skills ul {
+  padding-left: 20px;
+}
+
+.about-skills li {
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+.project-content {
+  padding: 50px 0;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.project-title h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  width: 30%;
+  text-align: center;
+  max-width: 300px;
+}
+
+.project i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-content {
+  padding: 50px 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.contact-title h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact textarea {
+  resize: none;
+  height: 150px;
+}
+
+.submit {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
